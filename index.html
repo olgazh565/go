@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GO - территория игр</title>
     <link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
-    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">    
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        form{
+            width: 30%;
+        }
+    </style>
 </head>
 <body> 
     <div>
@@ -114,5 +123,108 @@
             <a href="http://telegram.org" target="_blank">Telegram</a>
         </li>
     </ul>
+
+    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank">
+
+        <fieldset>
+            <h2>Забронировать</h2>
+
+            <fieldset>
+                <label>
+                    <input type="radio" name="room" value="80'sVibes">80's vibes
+                </label>               
+                <label>
+                    <input type="radio" name="room" value="starWars">star wars
+                </label>     
+                <label>
+                    <input type="radio" name="room" value="wildWest">wild west
+                </label> 
+                <label>
+                    <input type="radio" name="room" value="neonStyle">neon style
+                </label>            
+            </fieldset>
+
+            <fieldset>
+                <legend>Собери набор развлечений</legend>
+                <fieldset>
+                    <legend>Приставка:</legend>
+                    <label>
+                        <input type="radio" name="console" value="playStation">PlayStation
+                    </label>               
+                    <label>
+                        <input type="radio" name="console" value="segaMegaDrive">Sega Mega Drive
+                    </label>     
+                    <label>
+                        <input type="radio" name="console" value="x-boxOneS">X-box One S
+                    </label> 
+                    <label>
+                        <input type="radio" name="console" value="dendy">Dendy
+                    </label> 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Настольные игры:</legend>
+                    <label>
+                        <input type="checkbox" name="game" value="jenga">Jenga
+                    </label>               
+                    <label>
+                        <input type="checkbox" name="game" value="monopoly">Monopoly
+                    </label>     
+                    <label>
+                        <input type="checkbox" name="game" value="manchkin">Манчкин
+                    </label> 
+                    <label>
+                        <input type="checkbox" name="game" value="alias">Alias
+                    </label> 
+                </fieldset>
+
+                <fieldset>
+                    <legend>Дополнительно:</legend>
+                    <label>
+                        <input type="checkbox" name="extra" value="karaoke">Караоке
+                    </label>               
+                    <label>
+                        <input type="checkbox" name="extra" value="vr">VR
+                    </label>     
+                </fieldset>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Выбери дату и время</legend>
+                <div>
+                    <label>Дата*
+                        <input type="date" name="date" required>
+                    </label>
+                    <label>Время*
+                        <input type="time" name="time" required>
+                    </label>
+                    <label>Количество человек*
+                        <input type="text" name="people" required>
+                    </label>
+                    <label>Имя*
+                        <input type="text" name="name" required>
+                    </label>
+                    <label>Фамилия*
+                        <input type="text" name="surname" required>
+                    </label>
+                    <label>Номер телефона*
+                        <input type="tel" name="phone" required>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="age" value="18+">Я старше 18 лет
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Забронировать</button>
+            <label>
+                <input type="checkbox" name="agreement" value="isAgreed" required>Согласен на обработку данных
+            </label>
+
+        </fieldset>
+        
+    </form>
+
 </body>
 </html>

@@ -1,41 +1,28 @@
-.faq{
+.faq__list{
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 .faq__item{
-    background-color: #fff;
-    color: #1C1A1A;
-    font-weight: 700;
-    font-size: 24px;
-    padding: 30px 70px;
-    margin-bottom: 20px;
-    position: relative;
+    margin-bottom: 20px; 
 }
-.faq__item:nth-of-type(even){
-    color: #fff;
-    background-color: #440F51;
-}
-.faq__item:nth-of-type(even)::after{
-    content: "";
-    display: block;
-    background-image: url(../img/open.svg);
-    width: 40px;
-    height: 40px;
-    background-size: contain;
-    position: absolute;
-    right: 70px;
-    bottom: 50%;
-    transform: translateY(50%);   
-}
-.faq__item:nth-of-type(odd)::after{
-    content: "";
-    display: block;
+.faq__button{
+    color: #1C1A1A;   
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    padding: 30px 70px;    
     background-image: url(../img/open-purple.svg);
-    width: 40px;
-    height: 40px;
-    background-size: contain; 
-    position: absolute;  
-    right: 70px;
-    bottom: 50%;
-    transform: translateY(50%);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center right 70px;    
+    background-color: #FFF; 
+    border: 0;  
+    font-weight: 700;
+    font-size: 24px;   
+}
+.faq__item:nth-child(even) .faq__button{
+    color: #FFF;
+    background-color: #440F51;
+    background-image: url(../img/open.svg);
 }

@@ -13,3 +13,7 @@ body{
     padding: 30px;
     margin: 0 auto;
 }
+.hidden-header{
+    position: fixed;
+    transform: scale(0);
+}

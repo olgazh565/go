@@ -12,12 +12,15 @@
 
 <body>
     <div class="wrapper">
+        
+        <h1 class="hidden-header">GAME OVER - игровая территория</h1>
+
         <header>
             <img src="./assets/img/logo.png" height="66" alt="Логотип компании Game Over"> 
 
-            <nav>
-                <h2>Меню</h2>
+            <h2>Меню</h2>
 
+            <nav>
                 <ul>
                     <li>
                         <a href="#halls">Залы</a>
@@ -41,7 +44,7 @@
         <main>
             
             <section>            
-                <h1>У нас есть всё для классного отдыха с друзьями!</h1>
+                <h2>У нас есть всё для классного отдыха с друзьями!</h2>
 
                 <ul>
                     <li>
@@ -83,8 +86,8 @@
                 </ul>  
             </section>
 
-            <section>
-                <h2 id="halls">Наши залы</h2>
+            <section id="halls">
+                <h2>Наши залы</h2>
 
                 <ol>
                     <li>
@@ -102,159 +105,122 @@
                 </ol>
             </section>
 
-            <section> 
+            <section id="booking"> 
+                <h2>Забронировать зал просто</h2>
+
                 <form action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank">
                     
-                    <h2 id="booking">Забронировать зал просто</h2>
-
                     <fieldset>
                         <legend> Выбери зал</legend>
-                        <label>
-                            <input type="radio" name="room" value="80'sVibes" lang="en">80's vibes
-                        </label>               
-                        <label>
-                            <input type="radio" name="room" value="starWars" lang="en">star wars
-                        </label>     
-                        <label>
-                            <input type="radio" name="room" value="wildWest" lang="en">wild west
-                        </label> 
-                        <label>
-                            <input type="radio" name="room" value="neonStyle" lang="en">neon style
-                        </label>            
+
+                        <input type="radio" name="hall" value="80'sVibes" id="80'sVibes">
+                        <label for="80'sVibes">80's vibes</label>
+                        
+                        <input type="radio" name="hall" value="starWars" id="starWars">
+                        <label for="starWars">star wars</label>
+                        
+                        <input type="radio" name="hall" value="wildWest" id="wildWest">
+                        <label for="wildWest">wild west</label>
+                        
+                        <input type="radio" name="hall" value="neonStyle" id="neonStyle">
+                        <label for="neonStyle">neon style</label>
+
                     </fieldset>
 
                     <fieldset>
                         <legend>Собери набор развлечений</legend>
+
                         <fieldset>
                             <legend>Приставка:</legend>
-                            <ul>
-                                <li>
-                                    <label>
-                                        <input type="radio" name="console" value="playStation" lang="en">PlayStation
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="radio" name="console" value="segaMegaDrive" lang="en">Sega Mega Drive
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="radio" name="console" value="x-boxOneS" lang="en">X-box One S
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="radio" name="console" value="dendy" lang="en">Dendy
-                                    </label>
-                                </li>
-                            </ul>
+                            
+                            <input type="radio" name="console" value="playStation" id="playStation">
+                            <label for="playStation">PlayStation</label>
+                        
+                            <input type="radio" name="console" value="segaMegaDrive" id="segaMegaDrive">
+                            <label for="segaMegaDrive">Sega Mega Drive</label>
+                        
+                            <input type="radio" name="console" value="x-boxOneS" id="x-boxOneS">
+                            <label for="x-boxOneS">X-box One S</label>
+                        
+                            <input type="radio" name="console" value="dendy" id="dendy">
+                            <label for="dendy">Dendy</label>
                         </fieldset>
 
                         <fieldset>
                             <legend>Настольные игры</legend>
-                            <ul>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="game" value="jenga" lang="en">Jenga
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="game" value="monopoly" lang="en">Monopoly
-                                    </label> 
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="game" value="manchkin">Манчкин
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="game" value="alias" lang="en">Alias
-                                    </label>
-                                </li>
-                            </ul>
+                            
+                            <input type="checkbox" name="game" value="jenga" id="jenga">
+                            <label for="jenga">Jenga</label>
+                        
+                            <input type="checkbox" name="game" value="monopoly" id="monopoly">
+                            <label for="monopoly">Monopoly</label> 
+                        
+                            <input type="checkbox" name="game" value="manchkin" id="manchkin">
+                            <label for="manchkin">Манчкин</label>
+                        
+                            <input type="checkbox" name="game" value="alias" id="alias">
+                            <label for="alias">Alias</label>
                         </fieldset>
 
                         <fieldset>
                             <legend>Дополнительно</legend>
-                            <ul>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="extra" value="karaoke">Караоке
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" name="extra" value="vr" lang="en">VR
-                                    </label>
-                                </li>
-                            </ul>
+                            
+                            <input type="checkbox" name="extra" value="karaoke" id="karaoke">
+                            <label for="karaoke">Караоке</label>
+                        
+                            <input type="checkbox" name="extra" value="vr" id="vr">
+                            <label>VR</label>
                         </fieldset>
 
                     </fieldset>
 
                     <fieldset>
                         <legend>Выбери дату и время</legend>
-                        <ul>
-                            <li>
-                                <label>Дата
-                                    <input type="date" name="date" required>
-                                </label>
-                            </li>
-                            <li>
-                                <label>Время
-                                    <input type="time" name="time" required>
-                                </label>
-                            </li>
-                            <li>
-                                <label>Сколько человек
-                                    <input type="number" name="people" required>
-                                </label>
-                            </li>
-                            <li>
-                                <label>Имя
-                                    <input type="text" name="name" required>
-                                </label>
-                            </li>
-                            <li>
-                                <label>Фамилия
-                                    <input type="text" name="surname" required>
-                                </label>
-                            </li>
-                            <li>
-                                <label>Телефон
-                                    <input type="tel" name="phone" required>
-                                </label>
-                            </li>
-                            <li>
-                                <label>E-mail
-                                    <input type="email" name="email" required>
-                                </label>
-                            </li>                          
-                        </ul>
+                        <div>
+                            <input type="text" name="date" required aria-label="Дата" placeholder="Дата" onfocus="(this.type='date')" >
+                            <input type="text" name="time" required aria-label="Время" placeholder="Время" onfocus="(this.type='time')">
+                            <input type="number" name="people" required aria-label="Сколько человек" placeholder="Сколько человек">                            
+                        </div>
+
+                        <div>
+                            <label for="name">Имя</label>
+                            <input type="text" name="name" required id="name">
+                            
+                            <label for="surname">Фамилия</label>
+                            <input type="text" name="surname" required id="surname">                            
+                        </div>
+
+                        <div>
+                            <label for="phone">Телефон</label>
+                            <input type="tel" name="phone" required id="phone">
+                            
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" required id="email">                            
+                        </div>                        
                     </fieldset>
 
                     <button type="submit">Забронировать</button>                 
                                 
                 </form>
             </section>
-            <section>
-                <h2 id="about">О нас</h2>
+
+            <section id="about">
+                <h2>О нас</h2>
                 
                 <p>Для наших гостей мы создали <i>концептуально новое игровое простанство виртуальной реальности</i> в центральной части города.</p>
                 <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
-                <blockquote>
-                    <q class="quote"><b lang="en">GAME OVER</b> - это место незабываемых впечатлений</q>
+                <blockquote class="quote">
+                    <p>
+                        <q><b lang="en">GAME OVER</b> - это место незабываемых впечатлений</q>
+                    </p>                    
                     <p>
                         <cite><i>Аркадий Абакшин, создатель игровой территории GAME OVER</i></cite>
                     </p>
                 </blockquote>
             </section>
             
-            <section>
-                <h2 id="feedback">Отзывы</h2>
+            <section id="feedback">
+                <h2>Отзывы</h2>
                 <ul>
                     <li>
                         <figure>
@@ -302,8 +268,8 @@
                 </ul>
             </section>
 
-            <section>  
-                <h2 id="contacts">Контакты</h2>  
+            <section id="contacts">  
+                <h2>Контакты</h2>  
 
                 <address>          
                     <p>г. Москва ул.Аквамарина, 16</p>
@@ -313,6 +279,8 @@
                     <p>
                         <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
                     </p>
+                </address> 
+                <nav>  
                     <ul>
                         <li>
                             <a href="http://vk.com" target="_blank">Vkontakte</a>
@@ -320,8 +288,8 @@
                         <li>
                             <a href="http://telegram.org" target="_blank">Telegram</a>
                         </li>
-                    </ul>
-                </address>
+                    </ul>   
+                </nav>              
             </section>
             
         </main>

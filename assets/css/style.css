@@ -1,15 +1,16 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #1B1A1B;
     color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-style: normal;
 }
-.quote{
-    text-transform: uppercase;
-}
-.wrapper{
-    width: 1200px;
-    padding: 30px;
+
+.wrapper {
+    width: 1240px;
+    padding: 146px 30px 51px;
     margin: 0 auto;
 }

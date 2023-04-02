@@ -1,0 +1,23 @@
+.banner {
+    height: 823px;
+    background-image: url("../imgs/game.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.banner__title {
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 100%;
+    letter-spacing: -0.1em;
+    margin: 0;
+}
+
+.banner__subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 50px;
+    margin: 0;
+    padding-left: 100px;
+}

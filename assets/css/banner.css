@@ -1,5 +1,5 @@
 .banner {
-    height: 823px;
+    min-height: 823px;
     background-image: url("../imgs/game.png");
     background-position: bottom right;
     background-repeat: no-repeat;

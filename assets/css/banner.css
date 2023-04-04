@@ -1,9 +1,19 @@
 .banner {
     min-height: 823px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
     background-image: url("../imgs/game.png");
     background-position: bottom right;
     background-repeat: no-repeat;
-    margin-bottom: 100px;
+    width: 675px;
+    height: 762px;
+    bottom: 0;
+    right: 0;
 }
 
 .banner__title {

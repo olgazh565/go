@@ -22,7 +22,8 @@
     background-size: cover;
     background-position: center;
     margin: 0 0 60px;
-    padding: 275px 410px;
+    text-align: center;
+    padding: 315px;
 }
 
 .halls__item:last-child {

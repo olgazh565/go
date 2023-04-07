@@ -54,7 +54,7 @@
     content: "\201C";
     position: absolute;
     left: 0;   
-    top: -8px; 
+    top: -12px; 
     color: #6C0287;
     font-weight: 900;
 }
@@ -73,6 +73,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
+    font-style: normal;
     text-transform: none;
     text-align: left;
     display: inline-block;

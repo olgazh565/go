@@ -1,5 +1,5 @@
 .about {
-    padding-bottom: 100px;
+    padding: 50px 0;
 }
 
 .about__title {
@@ -8,11 +8,19 @@
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
+}
+
+.about__wrapper {
+    padding-left: 680px;
+    background-image: url('../imgs/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
 }
 
 .about__texts {
-    margin: 0 0 70px 0;
+    margin: 0 0 59px 0;
 }
 
 .about__text {
@@ -20,10 +28,11 @@
     font-size: 20px;
     line-height: 28px;
     margin: 0 0 28px 0;
+    white-space: pre-line;
 }
 
 .about__text:last-child {
-    margin: 0;
+    margin: 0;    
 }
 
 .about__quote {
@@ -36,8 +45,8 @@
 
 .quote__text {    
     white-space: pre-line;
-    margin: 0 0 40px 0;
-    padding-left: 55px;
+    margin: 0 0 39px 0;
+    padding-left: 31px;
     position: relative;
 }
 
@@ -65,10 +74,9 @@
     font-size: 20px;
     line-height: 28px;
     text-transform: none;
-    font-style: normal;
     text-align: left;
     display: inline-block;
-    width: 389px;
+    max-width: 389px;
     padding: 0 30px 0 109px;
     position: relative;
 }

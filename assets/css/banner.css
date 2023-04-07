@@ -1,10 +1,10 @@
 .banner {
-    padding: 146px 0 100px;
+    padding: 146px 0 50px 0;
 }
 
 .banner__container {
     min-height: 823px;
-    position: relative;
+    position: relative;    
 }
 
 .banner__container::after {

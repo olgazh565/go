@@ -28,21 +28,22 @@
 }
 
 .feedback__img {
-    max-width: 280px;
-    max-height: 280px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
-    display: inline-block;
-    overflow: hidden;
     margin-bottom: 11px;
+    object-fit: cover;
 }
 
-.img__oxana{
-    object-fit: cover;
+.feedback__img_user_max {
+    object-position: 50% top;
+}
+
+.feedback__img_user_oxana{
     object-position: 50% -45px;
 }
 
-.img__nikita {
-    object-fit: cover;
+.feedback__img_user_nikita {
     object-position: 50% -85px;
 }
 
@@ -51,8 +52,8 @@
 }
 
 .feedback__text {
+    max-width: 680px;
     display: inline-block;
     vertical-align: top;
-    max-width: 680px;
     padding-top: 52px;
 }

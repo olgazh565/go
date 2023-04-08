@@ -1,0 +1,58 @@
+.feedback {
+    padding: 50px 0;
+}
+
+.feedback__title {   
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;    
+}
+
+.feedback__item {
+    margin: 0 0 50px 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.feedback__item:last-child {
+    margin: 0;
+}
+
+.feedback__person {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.feedback__img {
+    max-width: 280px;
+    max-height: 280px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 11px;
+}
+
+.img__oxana{
+    object-fit: cover;
+    object-position: 50% -45px;
+}
+
+.img__nikita {
+    object-fit: cover;
+    object-position: 50% -85px;
+}
+
+.feedback__caption {
+    text-align: center; 
+}
+
+.feedback__text {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 680px;
+    padding-top: 52px;
+}

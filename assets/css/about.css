@@ -17,13 +17,14 @@
 
 .about__img {
     max-width: 600px;
-    height: auto;
+    display: inline-block;
+    vertical-align: center;
+    margin-right: 75px;
 }
 
 .about__wrapper {
-    max-width: 49%;
+    max-width: 500px;
     display: inline-block;
-    padding-left: 80px;    
 }
 
 .about__texts {

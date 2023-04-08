@@ -8,7 +8,7 @@
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 71px 0;
+    margin: 0 0 40px 0;
 }
 
 .halls__list {
@@ -21,9 +21,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0 0 60px;
     text-align: center;
-    padding: 315px 0;
+    padding: 135px 0;    
+    display: inline-block;
+    min-width: 580px;
+}
+
+.halls__item:nth-child(odd) {
+    margin-right: 15px;
+}
+
+.halls__item:nth-child(-n+2) {
+    margin-bottom: 20px;
 }
 
 .halls__item:last-child {

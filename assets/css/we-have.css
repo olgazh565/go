@@ -1,0 +1,38 @@
+.we-have {
+    padding: 50px 0;
+}
+
+.we-have__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 800px;
+    margin: 0 auto 41px;
+}
+
+.we-have__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+.we-have__item {
+    flex: 1 1 380px;
+}
+
+.we-have__figure {
+    position: relative;
+    font-size: 0;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.we-have__caption {
+    font-size: 20px;
+    position: absolute;
+    left: 40px;
+    top: 166px;
+    max-width: 300px;
+}

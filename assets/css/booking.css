@@ -1,5 +1,6 @@
 .booking {
-    padding: 50px 0;
+    padding: 80px 0;
+    background-color: #440F51;
 }
 
 .booking__title {
@@ -10,3 +11,187 @@
     text-transform: uppercase;
     margin: 0 0 40px 0;
 }
+
+.booking__form {
+    
+}
+
+.form__heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form__halls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.form__halls-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form__halls-label {
+    display: inline-block;
+    padding: 8px 10px;
+    cursor: pointer;
+    width: 250px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+}
+
+.form__halls-input:checked + .form__halls-label {
+    outline: 3px solid black;
+}
+
+.form__container {
+    padding: 0 100px;
+}
+
+.form__options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 0;
+}
+
+.options__subject {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 23px;
+}
+
+.options__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.options__item {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.options__radio {
+    width: 27px;
+    height: 27px;
+    margin-right: 12px;
+}
+
+.options__checkbox {
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+}
+
+.form__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.data__group {
+    flex: 1 1 300px;
+}
+
+.data__group-altered {
+    flex: 1 1 280px;    
+}
+
+.data__label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.data__item:not(:last-child) {
+    margin-bottom: 14px;
+}
+
+.data__item-wrap {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 36px;
+}
+
+.data__input {
+    width: 100%;
+    padding: 12px 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #211E1E;    
+}
+
+.data__input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #211E1E;
+}
+
+.data__input_altered {
+    flex: 0 1 134px;
+    background-image: url("../imgs/selector.svg");
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center right 19px;    
+}
+
+.data__input_altered:focus {
+    background-image: none;
+}
+
+.data__input_type-number {
+    background-image: url("../imgs/selector.svg");
+    background-repeat: no-repeat;
+    background-size: 21px;
+    background-position: center right 19px;
+}
+
+.data__input_type-number:focus {
+    background-image: none;
+}
+
+.form__button-wrap {
+    text-align: right;
+}
+
+.form__button {
+    width: 300px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #6C0287; 
+    padding: 16px 50px;
+    border: none;
+}
+
+

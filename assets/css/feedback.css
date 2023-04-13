@@ -8,23 +8,27 @@
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 40px 0;    
+    margin: 0 0 40px;    
+}
+
+.feedback__list {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .feedback__item {
-    margin: 0 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     font-weight: 400;
     font-size: 20px;
-    line-height: 28px;
-}
-
-.feedback__item:last-child {
-    margin: 0;
+    line-height: 28px;   
 }
 
 .feedback__person {
-    display: inline-block;
-    margin-right: 20px;
+    flex: 1 0 280px;
 }
 
 .feedback__img {
@@ -53,7 +57,5 @@
 
 .feedback__text {
     max-width: 680px;
-    display: inline-block;
-    vertical-align: top;
     padding-top: 52px;
 }

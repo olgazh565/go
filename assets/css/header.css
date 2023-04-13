@@ -1,0 +1,48 @@
+.header {
+    padding: 30px 0 25px;    
+}
+
+.header__container {
+    display: flex;
+    align-items: center;    
+}
+
+.header__logo {
+    width: 120px;
+    height: 66px;
+    margin-right: 96px;
+}
+
+.header__nav {
+    margin-right: auto;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;    
+}
+
+.header__item {
+    font-size: 22px;
+    line-height: 50px;  
+    text-transform: uppercase;     
+}
+
+.header__link {
+    color: #FFFFFF;
+}
+
+.header__button {
+    min-width: 280px;
+    height: 55px;
+    border: 3px solid #CD06FF;
+    background-color: #1B1A1B;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 12px 0 13px;
+}

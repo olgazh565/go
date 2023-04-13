@@ -7,13 +7,14 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    scroll-behavior: smooth;
 }
 
 body {
     min-width: 320px;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    background-color: #1B1A1B;
+    background-color: #1B1A1B;    
     color: #FFFFFF;
     font-style: normal;
 }
@@ -47,6 +48,10 @@ p,
 figure,
 fieldset {
     margin: 0;
+}
+
+fieldset {
+    border: none;
 }
 
 .container {

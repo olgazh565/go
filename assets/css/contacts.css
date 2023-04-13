@@ -1,5 +1,6 @@
 .contacts {
-    padding: 50px 0 51px;
+    padding: 50px 0 10px;
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
 .contacts__title {
@@ -11,33 +12,41 @@
     margin: 0 0 40px 0;
 }
 
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 156px;
+}
+
 .contacts__items {
+    display: flex;
+    flex-direction: column;
     font-weight: 700;
     font-size: 24px;
     font-style: normal;
     line-height: 28px;
-    max-width: 300px;  
-    margin: 0 0 39px 0;
+    margin: 0 0 35px;
 }
 
 .contacts__item {
-    display: block;
     background-repeat: no-repeat;
     background-size: 35px;
     background-position: center left;
-    padding-left: 65px; 
+    padding-left: 60px; 
     text-decoration: none;
     color: #FFFFFF;    
 }
 
 .contacts__item_type_address {
     background-image: url("../imgs/location.svg");
-    margin: 0 0 38px 0;   
+    max-width: 300px;
+    margin: 0 0 39px 0;   
 }
 
 .contacts__item_type_phone {
     background-image: url("../imgs/phone.svg");
-    margin: 0 0 11px 0;
+    margin: 0 0 14px 0;
 }
 
 .contacts__item_type_email {
@@ -46,25 +55,41 @@
 }
 
 .socials__list {
-    list-style: none;
     margin: 0;
-    padding: 0;
     font-size: 0;
+    display: flex;
+    align-items: center;
+    max-width: 280px;
+    gap: 26px;
 }
 
 .socials__item {
-    display: inline-block;
-    margin: 0 26px 0 0;
     font-size: 0;
-}
-
-.socials__item:last-child {
-    margin: 0;
 }
 
 .socials__link {
-    text-decoration: none;
     color: #FFFFFF;
-    display: inline-block;
-    font-size: 0;
+}
+
+.contacts__map {
+    width: 680px;
+    min-height: 274px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacts__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.copyright__contact {
+    text-align: right;
+}
+.copyright__designer {
+    margin-bottom: 6px;
 }

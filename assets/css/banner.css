@@ -54,16 +54,15 @@
 .block__text-colored {
     font-weight: 900;
     color: #CD06FF;
+    line-height: 1.41;
 }
 
 .block__text-colored_size_100 {
     font-size: 100px;
-    line-height: 141px;
 }
 
 .block__text-colored_size_75 {
     font-size: 75px;
-    line-height: 106px;
 }
 
 .block__text {
@@ -74,12 +73,14 @@
 }
 
 .banner__button {
+    display: inline-block;
     width: 374px;
     height: 80px;
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
     padding: 25px 0;
+    text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #6C0287;

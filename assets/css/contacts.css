@@ -54,6 +54,23 @@
     margin: 0;
 }
 
+.contacts__item_type_phone:hover,
+.contacts__item_type_email:hover {
+    color: #EADEED;
+}
+
+.contacts__item_type_phone:focus,
+.contacts__item_type_email:focus {
+    color: #EADEED;
+    outline: 1px solid #CD06FF;
+}
+
+.contacts__item_type_phone:active,
+.contacts__item_type_email:active {
+    color: #CD06FF;
+    outline: 0;
+}
+
 .socials__list {
     margin: 0;
     font-size: 0;
@@ -69,6 +86,20 @@
 
 .socials__link {
     color: #FFFFFF;
+}
+
+.socials__link:hover {
+    color: #EADEED;
+}
+
+.socials__link:focus {
+    color: #EADEED;
+    outline: 1px solid #CD06FF;
+}
+
+.socials__link:active {
+    color:  #CD06FF;
+    outline: 0;
 }
 
 .contacts__map {
@@ -92,4 +123,22 @@
 }
 .copyright__designer {
     margin-bottom: 6px;
+}
+
+.copyright__link{
+    color: #FFFFFF;
+}
+
+.copyright__link:hover{
+    color: #EADEED;
+}
+
+.copyright__link:focus{
+    color: #EADEED;
+    outline: 1px solid #CD06FF;
+}
+
+.copyright__link:active{
+    color: #CD06FF;
+    outline: 0;
 }

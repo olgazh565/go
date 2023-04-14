@@ -87,6 +87,19 @@
     border: none;
     border-radius: 10px;
     position: relative;
+    outline: 0;
+}
+
+.banner__button:hover {
+    background-color: #840AA3;
+}
+
+.banner__button:focus {
+    background-color: #840AA3;
+}
+
+.banner__button:active {
+    background-color: #640AA3;
 }
 
 .banner__button::before {
@@ -110,4 +123,20 @@
     left: 50%;
     z-index: 1;
     transform: translateX(-50%);
+    background-image: url("../imgs/button-down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner__button-down:hover {
+    background-image: url("../imgs/button-down-hover.svg");
+}
+
+.banner__button-down:focus {
+    outline: 1px solid #CD06FF;;    
+}
+
+.banner__button-down:active {
+    background-image: url("../imgs/button-down-active.svg");
+    outline: 0;
 }

@@ -42,8 +42,24 @@
     line-height: 28px;
 }
 
+.faq__button:hover {
+    background-image: url(../imgs/open-hover.svg);
+}
+
+.faq__button:active {
+    background-image: url(../imgs/open-active.svg);
+}
+
 .faq__item:nth-child(even) .faq__button {
     color: #FFF;
     background-color: #440F51;
     background-image: url(../imgs/open-white.svg);
+}
+
+.faq__item:nth-child(even) .faq__button:hover {
+    background-image: url(../imgs/open-white-hover.svg);
+}
+
+.faq__item:nth-child(even) .faq__button:active {
+    background-image: url(../imgs/open-white-active.svg);
 }

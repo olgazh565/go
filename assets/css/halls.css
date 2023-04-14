@@ -36,3 +36,17 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+.halls__link:hover {
+    color: #EADEED;
+}
+
+.halls__link:focus {
+    color: #EADEED;
+    outline: 1px solid #CD06FF;
+}
+
+.halls__link:active {
+    color: #CD06FF;
+    outline: 0;
+}

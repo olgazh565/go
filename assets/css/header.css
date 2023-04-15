@@ -30,7 +30,6 @@
 }
 
 .header__link {
-    color: #FFFFFF;
     transition: color .2s ease-in, 
                 outline .2s ease-in;
 }
@@ -59,7 +58,7 @@
     font-size: 22px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--main-color, #FFFFFF);
     padding: 12px 0 13px;
     outline: 0;
     transition: background .2s ease-in,

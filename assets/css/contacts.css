@@ -35,7 +35,6 @@
     background-position: center left;
     padding-left: 60px; 
     text-decoration: none;
-    color: #FFFFFF;
     outline: none;
     transition: color .2s ease-in, 
                 outline .2s ease-in;   
@@ -89,7 +88,6 @@
 }
 
 .socials__link {
-    color: #FFFFFF;
     outline: 1px solid transparent;
     transition: color .2s ease-in, 
                 outline .2s ease-in;
@@ -133,7 +131,6 @@
 }
 
 .copyright__link{
-    color: #FFFFFF;
     outline: 1px solid transparent;
     transition: color .2s ease-in, 
                 outline .2s ease-in;

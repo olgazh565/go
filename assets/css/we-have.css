@@ -1,5 +1,5 @@
 .we-have {
-    padding: 50px 0;
+    padding: 50px 0 119px;
 }
 
 .we-have__title {
@@ -25,6 +25,10 @@
     font-size: 20px;
     height: 228px;
     transition: transform .4s ease-in;
+}
+
+.we-have__item:nth-child(3n+2) {
+    transform: translateY(70px);
 }
 
 .we-have__item:hover {

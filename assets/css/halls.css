@@ -35,6 +35,9 @@
     line-height: 80px;
     text-align: center;
     text-transform: uppercase;
+    outline: 1px solid transparent;
+    transition: color .2s ease-in, 
+                outline .2s ease-in;
 }
 
 .halls__link:hover {

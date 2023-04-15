@@ -88,6 +88,7 @@
     border-radius: 10px;
     position: relative;
     outline: 0;
+    transition: background .3s ease-in;
 }
 
 .banner__button:hover {
@@ -126,6 +127,8 @@
     background-image: url("../imgs/button-down.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    transition: background .3s ease-in,
+                outline .3s ease-in;    
 }
 
 .banner__button-down:hover {

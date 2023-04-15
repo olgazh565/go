@@ -31,6 +31,8 @@
 
 .header__link {
     color: #FFFFFF;
+    transition: color .2s ease-in, 
+                outline .2s ease-in;
 }
 
 .header__link:hover {
@@ -60,6 +62,8 @@
     color: #FFFFFF;
     padding: 12px 0 13px;
     outline: 0;
+    transition: background .2s ease-in,
+                border .2s ease-in;    
 }
 
 .header__button:hover {

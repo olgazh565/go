@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/style.css"> 
 </head>
 
-<body>
+<body class="preload">
     <header class="header">
         <div class="container header__container">
             <img class="header__logo" src="./assets/imgs/logo-white.svg" alt="логотип компании game over">
@@ -398,4 +398,9 @@
         </div>                  
     </footer>           
 </body>
+
+<script>
+    window.addEventListener('load', function()
+        {document.body.classList.remove('preload')})
+</script>
 </html>

@@ -40,6 +40,7 @@
     font-weight: 700;
     font-size: 24px;   
     line-height: 28px;
+    transition: background-image .3s ease-in;
 }
 
 .faq__button:hover {
@@ -54,6 +55,7 @@
     color: #FFF;
     background-color: #440F51;
     background-image: url(../imgs/open-white.svg);
+    transition: background-image .3s ease-in;
 }
 
 .faq__item:nth-child(even) .faq__button:hover {

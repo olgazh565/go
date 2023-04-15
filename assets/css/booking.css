@@ -51,6 +51,9 @@
     border-radius: 8px;
     border: 3px solid transparent;
     outline: 0;
+    transition: color .2s ease-in, 
+                border .2s ease-in,
+                background .2s ease-in;
 }
 
 .form__halls-label:hover {
@@ -68,6 +71,7 @@
     background-color: #6C0287;
     border: 3px solid #FFFFFF;
     color: #FFFFFF;
+    transition: .3s ease-in;                
 }
 
 .form__container {
@@ -115,6 +119,7 @@
     height: 25px;
     margin-right: 12px;
     outline: 0;
+    transition: outline .3s ease-in;
 }
 
 .options__radio:focus,
@@ -169,6 +174,7 @@
     color: #211E1E; 
     border: 2px solid transparent;
     outline: 0;
+    transition: border .3s ease-in;
 }
 
 .data__input:focus {
@@ -223,6 +229,8 @@
     padding: 16px 50px;
     border: 3px solid transparent;
     outline: 0;
+    transition: background .2s ease-in,
+                border .2s ease-in;  
 }
 
 .form__button:hover {

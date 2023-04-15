@@ -35,7 +35,10 @@
     background-position: center left;
     padding-left: 60px; 
     text-decoration: none;
-    color: #FFFFFF;    
+    color: #FFFFFF;
+    outline: none;
+    transition: color .2s ease-in, 
+                outline .2s ease-in;   
 }
 
 .contacts__item_type_address {
@@ -47,6 +50,7 @@
 .contacts__item_type_phone {
     background-image: url("../imgs/phone.svg");
     margin: 0 0 14px 0;
+
 }
 
 .contacts__item_type_email {
@@ -86,6 +90,9 @@
 
 .socials__link {
     color: #FFFFFF;
+    outline: 1px solid transparent;
+    transition: color .2s ease-in, 
+                outline .2s ease-in;
 }
 
 .socials__link:hover {
@@ -127,6 +134,9 @@
 
 .copyright__link{
     color: #FFFFFF;
+    outline: 1px solid transparent;
+    transition: color .2s ease-in, 
+                outline .2s ease-in;
 }
 
 .copyright__link:hover{

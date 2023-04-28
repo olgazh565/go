@@ -4,16 +4,14 @@
 }
 
 .booking__title {
-    font-weight: 700;
     font-size: 40px;
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 0 40px 0;
+    margin-bottom: 45px;
 }
 
 .form__heading {
-    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
@@ -37,13 +35,11 @@
 
 .form__halls-label {
     display: inline-block;
-    padding: 8px 10px;
-    cursor: pointer;
     width: 250px;
-    height: 55px;
-    font-weight: 700;
+    padding: 10px 0;
+    cursor: pointer;
     font-size: 30px;
-    line-height: 40px;
+    line-height: 1;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
@@ -79,14 +75,14 @@
 }
 
 .form__options {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 155px;
+    margin-bottom: 40px;
     padding: 0;
 }
 
 .options__subject {
-    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 23px;
@@ -98,25 +94,29 @@
     padding: 0;
 }
 
+.options__list_altered {
+    padding-left: 23px;
+}
+
 .options__item {
     font-weight: 400;
     font-size: 22px;
     line-height: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     display: flex;
     align-items: center;
 }
 
 .options__radio {
-    width: 27px;
-    height: 27px;
+    width: 28px;
+    height: 28px;
     margin-right: 12px;
     outline: 0;
 }
 
 .options__checkbox {
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     margin-right: 12px;
     outline: 0;
     transition: outline .3s ease-in;
@@ -150,11 +150,6 @@
     flex: 1 1 280px;    
 }
 
-.data__label {
-    display: block;
-    margin-bottom: 6px;
-}
-
 .data__item:not(:last-child) {
     margin-bottom: 14px;
 }
@@ -165,9 +160,16 @@
     margin-bottom: 36px;
 }
 
+.data__label {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 6px;
+}
+
 .data__input {
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 18px;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -191,10 +193,7 @@
 .data__input_altered {
     flex: 0 1 134px;
     max-width: 134px;
-    background-image: url("../imgs/selector.svg");
-    background-repeat: no-repeat;
-    background-size: 21px;
-    background-position: center right 19px;    
+    background: url("../imgs/selector.svg") center right 25px / 21px no-repeat #FFFFFF;   
 }
 
 .data__input_altered:focus {
@@ -202,10 +201,7 @@
 }
 
 .data__input_type-number {
-    background-image: url("../imgs/selector.svg");
-    background-repeat: no-repeat;
-    background-size: 21px;
-    background-position: center right 19px;
+    background: url("../imgs/selector.svg") center right 25px / 21px no-repeat #FFFFFF;
 }
 
 .data__input_type-number:focus {
@@ -217,20 +213,35 @@
 }
 
 .form__button {
+    display: inline-block;
     width: 300px;
     height: 60px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 10px;
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
     color: #6C0287; 
-    padding: 16px 50px;
+    padding: 16px 0;
     border: 3px solid transparent;
     outline: 0;
+    position: relative;
+    z-index: 1;
     transition: background .2s ease-in,
                 border .2s ease-in;  
+}
+
+.form__button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    filter: blur(13px);
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 .form__button:hover {

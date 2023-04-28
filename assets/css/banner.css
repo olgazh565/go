@@ -10,9 +10,7 @@
 .banner__container::after {
     content: "";
     position: absolute;
-    background-image: url("../imgs/game.png");
-    background-position: bottom right;
-    background-repeat: no-repeat;
+    background: url("../imgs/game.png") bottom right/cover no-repeat;
     width: 675px;
     height: 762px;
     bottom: 0;
@@ -33,7 +31,7 @@
     line-height: 50px;
     margin: 0;
     padding-left: 100px;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
 }
 
 .banner__block {
@@ -63,6 +61,7 @@
 
 .block__text-colored_size_75 {
     font-size: 75px;
+    font-variant: small-caps;
 }
 
 .block__text {
@@ -76,7 +75,6 @@
     display: inline-block;
     width: 374px;
     height: 80px;
-    font-weight: 700;
     font-size: 26px;
     line-height: 30px;
     padding: 25px 0;
@@ -90,6 +88,18 @@
     transition: background .3s ease-in;
 }
 
+.banner__button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #6C0287;
+    filter: blur(10px);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
 .banner__button:hover {
     background-color: #840AA3;
 }
@@ -101,18 +111,6 @@
 .banner__button:active {
     background-color: #640AA3;
 }
-
-.banner__button::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: #6C0287;
-    filter: blur(10px);
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}       
 
 .banner__button-down {
     display: block;

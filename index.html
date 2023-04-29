@@ -13,7 +13,17 @@
 <body class="preload">
     <header class="header">
         <div class="container header__container">
-            <img class="header__logo" src="./assets/imgs/logo-white.svg" alt="логотип компании game over">
+            <button class="header__mobile-button" type="button" aria-label="навигация">
+                <svg width="54" height="29" viewBox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="54" height="5" rx="2"/>
+                    <rect y="12" width="54" height="5" rx="2"/>
+                    <rect y="24" width="31" height="5" rx="2"/>
+                </svg>                    
+            </button>
+
+            <a class="header__logo" href="#">
+                <img class="header__logo-img" src="./assets/imgs/logo-white.svg" alt="логотип компании game over">
+            </a>    
 
             <nav class="header__nav">
                 <ul class="header__list">
@@ -40,7 +50,6 @@
     </header>
 
     <main>
-
         <section class="banner">
             <div class="container banner__container">
                 <h1 class="banner__title">GAME OVER</h1>
@@ -66,7 +75,7 @@
 
         <section class="we-have" id="we-have">
             <div class="container">
-                <h1 class="we-have__title">У нас есть все для классного отдыха с друзьями!</h1>
+                <h1 class="we-have__title title">У нас есть все для классного отдыха с друзьями!</h1>
 
                 <ul class="we-have__list">
                     <li class="we-have__item" style="background-image: url(./assets/imgs/vr-glasses.jpg);">                    
@@ -85,7 +94,7 @@
                         <p class="we-have__caption" title="Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
                     </li>
                     <li class="we-have__item" style="background-image: url(./assets/imgs/playstation.jpg);">                    
-                        <p class="we-have__caption" title="PlayStation">PlayStation</p>
+                        <p class="we-have__caption" title="PlayStation">PlayStation 5</p>
                     </li>
                 </ul>
             </div>
@@ -93,7 +102,7 @@
 
         <section class="halls" id="halls">
             <div class="container">
-                <h2 class="halls__title">Наши залы</h2>
+                <h2 class="halls__title title">Наши залы</h2>
 
                 <ul class="halls__list">
                     <li class="halls__item" style="background-image: url('./assets/imgs/80s_vibes.jpg')">
@@ -122,7 +131,7 @@
 
         <section class="booking" id="booking"> 
             <div class="container">
-                <h2 class="booking__title">Забронировать зал просто</h2>
+                <h2 class="booking__title title">Забронировать зал просто</h2>
 
                 <form class="booking__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST" target="_blank">
 
@@ -218,7 +227,7 @@
                     
                         <fieldset class="form__data data">
 
-                            <div class="data__group">
+                            <div class="data__group data__group_one">
                                 <div class="data__item-wrap">
                                     <input class="data__input data__input_altered" type="text" name="date" aria-label="Дата" placeholder="Дата" required onfocus="(this.type='date')" onblur="(this.type='text')">
                                     <input class="data__input data__input_altered" type="text" name="time" aria-label="Время" placeholder="Время" required onfocus="(this.type='time')" onblur="(this.type='text')">
@@ -228,7 +237,7 @@
                                 </div>                     
                             </div>
 
-                            <div class="data__group-altered">
+                            <div class="data__group data__group_two">
                                 <div class="data__item">
                                     <label class="data__label" for="name">Имя</label>
                                     <input class="data__input" type="text" name="name" required id="name">
@@ -239,7 +248,7 @@
                                 </div>
                             </div>
                         
-                            <div class="data__group">
+                            <div class="data__group data__group_three">
                                 <div class="data__item" >
                                     <label class="data__label" for="phone">Телефон</label>
                                     <input class="data__input" type="tel" name="phone" required id="phone">
@@ -260,33 +269,33 @@
 
         <section class="about" id="about">
             <div class="container">
-                <h2 class="about__title">О нас</h2>
+                <h2 class="about__title title">О нас</h2>
                 <div class="about__container">
                     <img class="about__img" src="./assets/imgs/about-bg.jpg" alt="фото-коллаж">
-                    <div class="about__wrapper">
-                        <div class="about__texts">
-                            <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности
-                                в центральной части города.</p>
-                            <p class="about__text">Каждый день мы стараемся создавать
-                                для вас самую лучшую игровую атмосферу
-                                и радовать Вас топовыми игровыми разработками
-                                со всего мира.</p>
-                        </div> 
 
-                        <blockquote class="about__quote quote">
-                            <p class="quote__text">game over &mdash; это место незабываемых впечатлений <span class="quote__text-colored">&rdquo;</span></p>
-                            <p class="quote__wrapper">
-                                <cite class="quote__boss">Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
-                            </p> 
-                        </blockquote>
-                    </div>
+                    <div class="about__texts">
+                        <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности
+                            в центральной части города.</p>
+                        <p class="about__text">Каждый день мы стараемся создавать
+                            для вас самую лучшую игровую атмосферу
+                            и радовать Вас топовыми игровыми разработками
+                            со всего мира.</p>
+                    </div> 
+
+                    <blockquote class="about__quote quote">
+                        <p class="quote__text">game over &mdash; это место незабываемых впечатлений <span class="quote__text-colored">&rdquo;</span></p>
+                        <p class="quote__wrapper">
+                            <cite class="quote__boss">Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
+                        </p> 
+                    </blockquote>
+                
                 </div>
             </div>    
         </section>    
     
         <section class="feedback" id="feedback">
             <div class="container">
-            <h2 class="feedback__title">Отзывы посетителей</h2>
+            <h2 class="feedback__title title">Отзывы посетителей</h2>
                 <ul class="feedback__list">
                     <li class="feedback__item">
                         <figure class="feedback__person">
@@ -315,7 +324,7 @@
 
         <section class="faq">
             <div class="container">
-                <h2 class="faq__title">Частые вопросы</h2>
+                <h2 class="faq__title title">Частые вопросы</h2>
 
                 <ul class="faq__list">
                     <li class="faq__item">
@@ -341,7 +350,7 @@
 
     <footer class="contacts" id="contacts">  
         <div class="container">
-            <h2 class="contacts__title">Контакты</h2>
+            <h2 class="contacts__title title">Контакты</h2>
             
             <div class="contacts__wrapper">
 

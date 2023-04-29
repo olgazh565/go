@@ -7,7 +7,13 @@
     align-items: center;    
 }
 
+.header__mobile-button {
+    display: none;
+}
+
 .header__logo {
+    display: block;
+    font-weight: 0;
     width: 120px;
     height: 66px;
     margin-right: 96px;
@@ -51,7 +57,7 @@
 }
 
 .header__button {
-    height: 55px;
+    /* height: 55px; */
     border: 3px solid #CD06FF;
     background-color: #1B1A1B;
     border-radius: 10px;
@@ -80,3 +86,82 @@
     background-color: #640AA3;
     border: 1px solid #000000;
 }
+
+@media (max-width: 1280px) {
+    .header {
+        padding: 30px 0 15px;    
+    }
+
+    .header__logo {
+        width: 87px;
+        height: 55px;
+        margin-right: 79px;
+    }
+
+    .header__list {
+        gap: 20px;    
+    }
+
+    .header__item {
+        font-size: 18px;
+        line-height: 22px;  
+    }
+
+    .header__button {
+        /* height: 55px; */
+        font-size: 18px;
+        line-height: 24px;
+        padding: 9px 25px;
+    }
+}
+
+@media (max-width: 915px) {
+    .header__logo {
+        margin-right: 40px;
+    }
+} 
+
+@media (max-width: 900px) {
+    .header {
+        padding: 32px 0 15px;    
+    }
+
+    .header__container {
+        justify-content: space-between;
+        align-items: flex-end;    
+    }
+
+    .header__mobile-button {
+        display: block;
+        padding: 8px 1px;
+        color: #6C0287;
+        background-color: transparent;
+        border: 1px solid transparent;
+        outline: 0;
+        transition: color .3s ease-in;
+    }
+
+    .header__mobile-button:hover {
+        color: #CD06FF;
+    }
+
+    .header__mobile-button:active {
+        color: #840AA3;
+    }
+
+    .header__mobile-button:focus {
+        border: 1px solid #CD06FF;
+    }
+
+    .header__nav {
+        display: none;
+    }  
+    
+    .header__button {
+        width: 229px;
+        height: 45px;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 9px 0;
+    }
+} 

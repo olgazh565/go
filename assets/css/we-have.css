@@ -109,7 +109,7 @@
     }
 
     .we-have__item {
-        min-height: 200px;
+        height: 200px;
     }
 
     .we-have__item:nth-child(2) {
@@ -124,3 +124,38 @@
         padding: 132px 30px 0 30px;
     }
 }
+
+@media (max-width: 640px) {
+    .we-have {
+        padding: 23px 0 15px;
+    }
+
+    .title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .we-have__title {
+        max-width: 280px;
+        margin-bottom: 15px;
+    }
+
+    .we-have__list {
+        max-width: 280px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    .we-have__item {
+        font-size: 10px;
+        line-height: 14px;
+        height: 75px;
+        background-size: cover;
+    }
+
+    .we-have__caption {        
+        padding: 30px 15px 0 10px;
+    }
+}
+

@@ -75,7 +75,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 155px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     padding: 0;
 }
 
@@ -102,6 +102,10 @@
     margin-bottom: 19px;
     display: flex;
     align-items: center;
+}
+
+.options__item:last-child {
+    margin-bottom: 0;
 }
 
 .options__radio {
@@ -275,7 +279,7 @@
     .form__options {
         grid-template-columns: repeat(3, 1fr);
         gap: 55px;
-        margin-bottom: 43px;
+        margin-bottom: 62px;
     }
 
     .options__list_altered {
@@ -322,8 +326,8 @@
 
     .form__options {
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px 50px;
-        margin-bottom: 27px;
+        gap: 30px 50px;
+        margin-bottom: 47px;
     }
 
     .options__list_altered {
@@ -392,3 +396,116 @@
         justify-content: center;
     }
 }    
+
+@media (max-width: 640px) {
+    .booking {
+        padding: 30px 0 30px;
+    }
+
+    .booking__title {
+        margin-bottom: 13px;
+    }
+
+    .form__heading {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .form__heading_altered-320 {
+        margin-bottom: 24px;
+    }
+
+    .form__halls {
+        gap: 14px 20px;
+        margin-bottom: 30px;
+    }
+
+    .form__halls-label {
+        width: 130px;
+        padding: 4px 0;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .form__options {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 29px;
+    }
+
+    .options__subject {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 14px;
+    }
+
+    .options__item {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 14px;
+    }
+
+    .options__item_checkbox {
+        margin-bottom: 20px;
+    }
+
+    .options__radio {
+        width: 31px;
+        height: 31px;
+        margin-right: 20px;
+    }
+    
+    .options__checkbox {
+        width: 31px;
+        height: 31px;
+        margin-right: 20px;
+    }
+
+    .form__data {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                            'group-one'
+                            'group-two' 
+                            'group-three';
+        gap: 35px 0;
+        margin-bottom: 36px;
+    }
+
+    .data__group_one {
+        grid-area: group-one;
+        grid-template-columns: 1fr;
+        gap: 15px 0;
+        margin: 0;
+    }
+
+    .data__item.data__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .data__item-wrap {
+        gap: 12px;
+        margin-bottom: 0;
+    }
+
+    .data__input {
+        padding: 15px 20px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .data__input::placeholder {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .form__button {
+        width: 280px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 26px;
+        padding: 17px 58px;
+        border-radius: 4px;
+    }
+}
+    

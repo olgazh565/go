@@ -64,6 +64,10 @@
     padding-top: 52px;
 }
 
+.feedback__text_altered-320 {
+    display: none;
+}
+
 @media (max-width: 1280px) {
     .feedback {
         padding: 35px 0;
@@ -166,5 +170,63 @@
     .feedback__text {
         max-width: 393px;
         padding-top: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .feedback {
+        padding: 15px 0;
+    }
+
+    .feedback__title {   
+        margin-bottom: 14px;    
+    }
+
+    .feedback__list {
+        padding: 0;
+        gap: 20px;
+    }
+
+    .feedback__item {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .feedback__person {
+        text-align: center;
+        flex: 1 0 100%;
+    }
+
+    .feedback__person::before {
+        width: 86px;
+        height: 86px;
+    }
+
+    .feedback__img {
+        width: 86px;
+        height: 86px;
+        margin-bottom: 3px;
+    }
+
+    .feedback__img_user_oxana{
+        object-position: 50% -10px;
+    }
+    
+    .feedback__img_user_nikita {
+        object-position: 50% -25px;
+    }
+
+    .feedback__text {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 280px;
+        padding-top: 0;
+    }
+
+    .feedback__text_altered-320 {
+        display: block;
     }
 }

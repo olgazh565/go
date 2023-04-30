@@ -14,9 +14,11 @@
 .header__logo {
     display: block;
     font-weight: 0;
-    width: 120px;
-    height: 66px;
     margin-right: 96px;
+}
+
+.header__logo_1024 {
+    display: none;
 }
 
 .header__nav {
@@ -93,8 +95,11 @@
     }
 
     .header__logo {
-        width: 87px;
-        height: 55px;
+        display: none;
+    }
+
+    .header__logo_1024 {
+        display: block;
         margin-right: 79px;
     }
 
@@ -123,12 +128,12 @@
 
 @media (max-width: 900px) {
     .header {
-        padding: 32px 0 15px;    
+        padding: 32px 0 10px;    
     }
 
     .header__container {
-        justify-content: space-between;
-        align-items: flex-end;    
+        display: grid;
+        grid-template-columns: minmax(50px, 213px) repeat(2, 1fr);
     }
 
     .header__mobile-button {
@@ -139,6 +144,7 @@
         border: 1px solid transparent;
         outline: 0;
         transition: color .3s ease-in;
+        justify-self: start;        
     }
 
     .header__mobile-button:hover {
@@ -156,12 +162,45 @@
     .header__nav {
         display: none;
     }  
+
+    .header__logo_1024 {
+        align-self: center;
+        margin: 0;
+    }
     
     .header__button {
-        width: 229px;
+        width: 228px;
         height: 45px;
         font-size: 18px;
         line-height: 24px;
         padding: 9px 0;
+        justify-self: end;
     }
 } 
+
+@media (max-width: 640px) {
+    .header {
+        padding: 20px 0 10px;    
+    }
+
+    .header__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__mobile-button {
+        width: 42px;
+        height: auto;
+    }
+
+    .header__logo_1024 {
+        justify-self: end;
+        width: 66px;
+        height: 42px;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+}

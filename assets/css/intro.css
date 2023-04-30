@@ -1,0 +1,148 @@
+.intro {
+    padding: 35px 0 50px;
+}
+
+.intro__link {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    outline: 1px solid transparent;
+    transition: color .2s ease-in, 
+                outline .2s ease-in;
+}
+
+.intro__link:hover {
+    color: #EADEED;
+}
+
+.intro__link:focus {
+    color: #EADEED;
+    outline: 1px solid #CD06FF;
+}
+
+.intro__link:active {
+    color: #CD06FF;
+    outline: 0;
+}
+
+.intro__background {
+    background: center/cover no-repeat;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.intro__background_star-wars {
+    background-position: top center;
+}
+
+.intro__title {
+    font-size: 90px;
+    line-height: 80px;
+    text-transform: uppercase;
+    max-width: 700px;
+}
+
+.intro__description {
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+    .intro {
+        padding: 35px 0 35px;
+    }
+
+    .intro__background {
+        min-height: 534px;
+        margin-bottom: 70px;
+    }
+
+    .intro__description {
+        font-size: 20px;
+        line-height: 150%;
+        max-width: 800px;
+    }
+}    
+
+@media (max-width: 900px) {
+    .intro {
+        padding: 30px 0 30px;
+    }
+
+    .intro__link {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .intro__link-arrow {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    .intro__link-text {
+        display: inline-block;
+    }
+
+    .intro__background {
+        min-height: 402px;
+        margin-bottom: 60px;
+    }
+
+    .intro__title {
+        font-size: 60px;
+        line-height: 120%;
+        max-width: 400px;
+    }
+
+    .intro__description {
+        font-size: 16px;
+        line-height: 150%;
+        max-width: 688px;
+    }
+} 
+
+@media (max-width: 640px) {
+    .intro {
+        padding: 3px 0 15px;
+    }
+
+    .intro__link {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 15px;
+    }
+
+    .intro__link-arrow {
+        display: inline-block;
+        max-width: 16px;
+        margin-right: 3px;
+    }
+
+    .intro__link-text {
+        display: inline-block;
+    }
+
+    .intro__background {
+        min-height: 168px;
+        margin-bottom: 30px;
+    }
+
+    .intro__title {
+        font-size: 30px;
+        line-height: 120%;
+        max-width: 200px;
+    }
+
+    .intro__description {
+        font-size: 16px;
+        line-height: 150%;
+        max-width: 280px;
+    }
+}

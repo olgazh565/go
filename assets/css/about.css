@@ -145,7 +145,7 @@
 
 @media (max-width: 900px) {
     .about {
-        padding: 60px 0 30px;
+        padding: 60px 0 28px;
     }
 
     .about__title {
@@ -192,5 +192,68 @@
     .about__texts {
         padding-top: 0;
         align-self: center;
+    }
+}
+
+@media (max-width: 660px) {
+    .about {
+        padding: 30px 0 15px;
+    }
+
+    .about__title {
+        margin-bottom: 15px;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'text'
+            'image'
+            'quote';
+        gap: 15px 0;
+    }
+
+    .about__img {
+        margin-bottom: 7px;
+    }
+
+    .about__texts {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+    .about__text {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 16px;
+        white-space: normal;
+    }
+
+    .about__quote {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .quote__text { 
+        max-width: 100%;   
+        margin-bottom: 13px;
+        padding-left: 15px;
+    }
+
+    .quote__text::before {
+        font-size: 22px;
+        top: -7px; 
+    }
+
+    .quote__boss {
+        font-size: 12px;
+        line-height: 16px;
+        max-width: 280px;
+        padding-left: 67px;
+    }
+
+    .quote__boss::before {
+        width: 56px;
+        height: 56px;
     }
 }

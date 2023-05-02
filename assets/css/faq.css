@@ -35,7 +35,7 @@
 }
 
 .faq__button:focus {
-    border: 2px solid #440F51;
+    border: 2px solid #840AA3;
 }
 
 .faq__item:nth-child(even) .faq__button:focus{
@@ -91,7 +91,7 @@
     }
 
     .faq__item:nth-child(even) .faq__button:focus{
-        border: 2px solid #440F51;
+        border: 2px solid #840AA3;
     }
 
     .faq__item:nth-child(even) .faq__button:hover {

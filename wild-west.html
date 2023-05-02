@@ -102,22 +102,22 @@
         <section class="other-halls" id="halls">
             <div class="container">
 
-                <h2 class="other-halls_title title">другие комнаты</h2>
+                <h2 class="other-halls__title title">другие комнаты</h2>
 
                 <ul class="other-halls__list">
-                    <li class="other-halls__item halls__item" style="background-image: url('./assets/imgs/star_wars.jpg')">
-                        <a class="other-halls__link halls__link" href="./star-wars.html">
-                            <span class="other-halls__text halls__text">star wars</span> 
+                    <li class="other-halls__item" style="background-image: url('./assets/imgs/star_wars.jpg')">
+                        <a class="other-halls__link" href="./star-wars.html">
+                            <span class="other-halls__text">star wars</span> 
                         </a>
                     </li>
-                    <li class="other-halls__item halls__item" style="background-image: url('./assets/imgs/neon_style.jpg')">
-                        <a class="other-halls__link halls__link" href="./neon-style.html">
-                            <span class="other-halls__text halls__text">neon style</span> 
+                    <li class="other-halls__item" style="background-image: url('./assets/imgs/neon_style.jpg')">
+                        <a class="other-halls__link" href="./neon-style.html">
+                            <span class="other-halls__text">neon style</span> 
                         </a>
                     </li>
-                    <li class="other-halls__item halls__item" style="background-image: url('./assets/imgs/80s_vibes.jpg')">
-                        <a class="other-halls__link halls__link" href="./80-vibes.html">
-                            <span class="other-halls__text halls__text">80&rsquo;s vibes</span>
+                    <li class="other-halls__item" style="background-image: url('./assets/imgs/80s_vibes.jpg')">
+                        <a class="other-halls__link" href="./80-vibes.html">
+                            <span class="other-halls__text">80&rsquo;s vibes</span>
                         </a>
                     </li>    
                 </ul>
@@ -185,11 +185,11 @@
                 </div>
             </div>
         </div>                  
-    </footer>           
+    </footer>
+    
+    <script>
+        window.addEventListener('load', function()
+            {document.body.classList.remove('preload')})
+    </script>
 </body>
-
-<script>
-    window.addEventListener('load', function()
-        {document.body.classList.remove('preload')})
-</script>
 </html>

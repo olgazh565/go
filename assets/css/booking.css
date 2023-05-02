@@ -119,7 +119,8 @@
     width: 27px;
     height: 27px;
     margin-right: 12px;
-    outline: 0;
+    outline: 1px solid transparent;
+    outline-offset: 1px;
     transition: outline .3s ease-in;
 }
 
@@ -130,7 +131,7 @@
 
 .options__radio:active,
 .options__checkbox:active {
-    outline: 0;
+    outline: 1px solid transparent;
 }
 
 .form__data {
@@ -206,8 +207,7 @@
 
 .form__button {
     display: inline-block;
-    width: 300px;
-    height: 60px;
+    min-width: 300px;
     background-color: #FFFFFF;
     border-radius: 10px;
     font-weight: 700;
@@ -215,7 +215,7 @@
     line-height: 28px;
     text-transform: uppercase;
     color: #6C0287; 
-    padding: 16px 0;
+    padding: 14px 10px;
     border: 3px solid transparent;
     outline: 0;
     position: relative;
@@ -296,11 +296,10 @@
     }
 
     .form__button {
-        width: 254px;
-        height: 50px;
+        min-width: 254px;
         font-size: 18px;
         line-height: 24px;
-        padding: 13px 0;
+        padding: 12px 10px 11px;
     }
 }
 
@@ -353,8 +352,8 @@
     .form__data {
         grid-template-columns: minmax(240px, 280px)  minmax(200px, 300px);
         grid-template-areas: 
-                            'group-one group-one'
-                            'group-two group-three';
+            'group-one group-one'
+            'group-two group-three';
         column-gap: 106px;
         justify-content: center;
         margin-bottom: 48px;
@@ -382,11 +381,10 @@
     }
 
     .form__button {
-        width: 300px;
-        height: 60px;
+        min-width: 300px;
         font-size: 22px;
         line-height: 28px;
-        padding: 16px 50px;
+        padding: 14px 10px;
     }
 }
 
@@ -465,9 +463,9 @@
     .form__data {
         grid-template-columns: 1fr;
         grid-template-areas: 
-                            'group-one'
-                            'group-two' 
-                            'group-three';
+            'group-one'
+            'group-two' 
+            'group-three';
         gap: 35px 0;
         margin-bottom: 36px;
     }
@@ -500,11 +498,10 @@
     }
 
     .form__button {
-        width: 280px;
-        height: 60px;
+        min-width: 280px;
         font-size: 18px;
         line-height: 26px;
-        padding: 17px 58px;
+        padding: 15px 10px;
         border-radius: 4px;
     }
 }

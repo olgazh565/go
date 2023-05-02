@@ -64,7 +64,7 @@
     padding-top: 52px;
 }
 
-.feedback__text_altered-320 {
+.feedback__text-altered-320 {
     display: none;
 }
 
@@ -114,7 +114,7 @@
 
     .feedback__text {
         max-width: 680px;
-        padding-top: 32px;
+        padding-top: 34px;
     }
 }
 
@@ -175,7 +175,7 @@
 
 @media (max-width: 640px) {
     .feedback {
-        padding: 15px 0;
+        padding: 15px 0 18px;
     }
 
     .feedback__title {   
@@ -190,7 +190,7 @@
     .feedback__item {
         flex-direction: column;
         align-items: center;
-        gap: 18px;
+        gap: 16px;
         font-size: 14px;
         line-height: 20px;
     }
@@ -208,7 +208,7 @@
     .feedback__img {
         width: 86px;
         height: 86px;
-        margin-bottom: 3px;
+        margin-bottom: 4px;
     }
 
     .feedback__img_user_oxana{
@@ -226,7 +226,7 @@
         padding-top: 0;
     }
 
-    .feedback__text_altered-320 {
+    .feedback__text-altered-320 {
         display: block;
     }
 }

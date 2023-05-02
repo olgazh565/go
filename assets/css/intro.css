@@ -26,6 +26,15 @@
     outline: 0;
 }
 
+.intro__link-arrow {
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.intro__link-text {
+    display: inline-block;
+}
+
 .intro__background {
     background: center/cover no-repeat;
     min-height: 750px;
@@ -120,13 +129,8 @@
     }
 
     .intro__link-arrow {
-        display: inline-block;
         max-width: 16px;
         margin-right: 3px;
-    }
-
-    .intro__link-text {
-        display: inline-block;
     }
 
     .intro__background {

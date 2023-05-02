@@ -72,11 +72,10 @@
 
 .banner__button {
     display: inline-block;
-    width: 374px;
-    height: 80px;
+    min-width: 374px;
     font-size: 26px;
     line-height: 30px;
-    padding: 25px 0;
+    padding: 25px 10px;
     text-align: center;
     text-transform: uppercase;
     background-color: #6C0287;
@@ -122,6 +121,7 @@
     z-index: 1;
     transform: translateX(-50%);
     background: url("../imgs/button-down.svg") center/cover no-repeat;
+    outline: 1px solid transparent; 
     transition: background .3s ease-in,
                 outline .3s ease-in;    
 }
@@ -131,12 +131,12 @@
 }
 
 .banner__button-down:focus {
-    outline: 1px solid #CD06FF;;    
+    outline: 1px solid #CD06FF;    
 }
 
 .banner__button-down:active {
     background-image: url("../imgs/button-down-active.svg");
-    outline: 0;
+    outline: 1px solid transparent; 
 }
 
 @media (max-width: 1280px) {
@@ -187,10 +187,9 @@
     }
     
     .banner__button {
-        width: 296px;
-        height: 64px;
+        min-width: 296px;
         font-size: 22px;
-        padding: 17px 48px;
+        padding: 17px 10px;
         margin-left: 39px;
     }
 
@@ -253,11 +252,10 @@
     }
     
     .banner__button {
-        width: 214px;
-        height: 46px;
+        min-width: 214px;
         font-size: 16px;
         line-height: 24px;
-        padding: 11px 34px;
+        padding: 11px 10px;
         margin-left: 0;
         border-radius: 4px;
     }
@@ -328,10 +326,9 @@
     }
     
     .banner__button {
-        width: 117px;
-        height: 27px;
+        min-width: 117px;
         font-size: 10px;
         line-height: 12px;
-        padding: 8px 13px;
+        padding: 8px 10px;
     }
 }

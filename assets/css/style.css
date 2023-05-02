@@ -1,4 +1,5 @@
 @import 'global.css';
+@import 'vars.css';
 @import 'faq.css';
 @import 'banner.css';
 @import 'halls.css';
@@ -9,7 +10,6 @@
 @import 'feedback.css';
 @import 'header.css';
 @import 'we-have.css';
-@import 'vars.css';
 @import 'intro.css';
 @import 'hall-has.css';
 @import 'other-halls.css';
